@@ -1,0 +1,73 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .upload-area {
+        padding: 30px 15px;
+    }
+    
+    .upload-text {
+        font-size: 14px;
+    }
+    
+    .upload-btn, .enhance-btn {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+    
+    .enhance-btn {
+        margin: 3px;
+        display: inline-block;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .upload-area {
+        padding: 25px 10px;
+    }
+    
+    .enhance-btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 550px;
+    }
+    
+    .upload-area {
+        padding: 50px 30px;
+    }
+}
