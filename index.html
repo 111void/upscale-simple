@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD Image Upscaler</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HD Image Upscaler</h1>
+        <p class="subtitle">AI-powered image enhancement with Waifu2x</p>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-text">Drop image here or click to upload</div>
+            <div class="upload-hint">Supports JPG, PNG • Max 5MB for AI upscaling</div>
+            <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Select Image</button>
+        </div>
+        
+        <input type="file" id="fileInput" accept="image/*">
+        
+        <div class="preview" id="preview">
+            <img id="previewImg" alt="Preview">
+            <div>
+                <button class="enhance-btn" onclick="enhanceImage(2)">2x HD</button>
+                <button class="enhance-btn" onclick="enhanceImage(4)">4x HD</button>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">Enhancing image...</div>
+        
+        <div class="result" id="result">
+            <img id="resultImg" alt="Enhanced">
+            <div style="margin-top: 15px;">
+                <button class="enhance-btn" onclick="downloadResult()">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/upscaler.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
